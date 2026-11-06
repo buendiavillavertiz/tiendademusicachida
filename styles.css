@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151515;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #252525;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #d93636;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d93636;
+}
+
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #202020;
+}
+
+.presentacion h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 40px;
+}
+
+main h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.disco {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.disco img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.disco h3 {
+    text-align: center;
+}
+
+.disco p {
+    color: #aaaaaa;
+}
+
+.disco span {
+    color: #e04444;
+    font-weight: bold;
+}
+
+.disco button {
+    background-color: #d93636;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.disco button:hover {
+    background-color: #a82020;
+}
+
+footer {
+    background-color: #252525;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #aaaaaa;
+}
+
+@media (max-width: 700px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+}
